@@ -145,7 +145,7 @@
   "controlStyles[54].target": "TextBlock#AppDisplayName",
   "controlStyles[54].styles[0]": "Foreground=$Text",
   "controlStyles[55].target": "TextBlock#Text ",
-  "controlStyles[55].styles[0]": "Foreground=$Text",
+  "controlStyles[55].styles[0]": "Foreground=$RED",
   "controlStyles[56].target": "TextBlock#FolderGlyph",
   "controlStyles[56].styles[0]": "Foreground=$Text",
   "controlStyles[57].target": "TextBlock#StatusMessage",
