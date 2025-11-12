@@ -83,7 +83,7 @@
   "controlStyles[22].styles[0]": "Background=$BG3",
   "controlStyles[22].styles[1]": "Margin=-20,1,0,1",
   "controlStyles[22].styles[2]": "CornerRadius=0,18,18,0",
-  "controlStyles[19].styles[0]": "Background:=<ImageBrush Stretch=\"none\" ImageSource=\"C:\\Users\\MrDLi\\iCloudDrive\\Downloads\\WinButton.png\"/>",
+  "controlStyles[19].styles[0]": "Background:=<ImageBrush Stretch=\"none\" ImageSource=\"https://raw.githubusercontent.com/MrDLingters/Win11TokyoNight/refs/heads/main/Windhawk/WinButton.png\"/>",
   "styleConstants[0]": "BG = #1a1b26",
   "styleConstants[1]": "BG2 = #24283b",
   "styleConstants[2]": "BG3 = #343B58",
