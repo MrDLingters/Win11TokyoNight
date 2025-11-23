@@ -5,18 +5,18 @@
   "cross_monitor_move_behaviour": "Insert",
   "transparency": false,
   "transparency_alpha": 254,
-  "default_workspace_padding": 10,
-  "default_container_padding": 5,
+  "default_workspace_padding": 8,
+  "default_container_padding": 6,
   "border": true,
   "border_width": 4,
   "border_offset": -1,
-  "mouse_follows_focus": true,
+  "mouse_follows_focus": false,
   "animation": {
     "enabled": true,
-    "duration": 400,
+    "duration": 150,
     "fps": 160,
     "style": {
-        "movement":"EaseOutBack",
+        "movement":"EaseInOutQuad",
         "transparency": "Linear"
       }
 },
@@ -81,6 +81,11 @@
 {
 "kind": "Exe",
 "id": "Photos.exe",
+"matching_strategy": "Equals",
+},
+{
+"kind": "Exe",
+"id": "PotPlayerMini64.exe",
 "matching_strategy": "Equals",
 }
 ]
