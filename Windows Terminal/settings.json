@@ -65,7 +65,7 @@
                 "hidden": false,
                 "intenseTextStyle": "bright",
                 "name": "PowerShell",
-                "opacity": 95,
+                "opacity": 97,
                 "scrollbarState": "hidden",
                 "source": "Windows.Terminal.PowershellCore",
                 "useAcrylic": false
@@ -109,7 +109,7 @@
             "yellow": "#E5E7EB"
         },
         {
-            "background": "#1A1B2C",
+            "background": "#1A1B26",
             "black": "#414868",
             "blue": "#7AA2F7",
             "brightBlack": "#414868",
