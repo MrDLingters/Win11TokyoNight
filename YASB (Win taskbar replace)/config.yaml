@@ -34,8 +34,8 @@ bars:
     widgets:
       left:
         [
-          "komorebi_active_layout",
           "komorebi_workspaces",
+          "komorebi_active_layout",
           "taskbar",
         ]
       center:
@@ -268,7 +268,7 @@ widgets:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
       hide_if_offline: true
-      label: "{icon} {layout_name}"
+      label: "{layout_name}"
       layouts: ['bsp', 'columns', 'rows', 'grid', 'vertical_stack', 'horizontal_stack', 'ultrawide_vertical_stack','right_main_vertical_stack']
       layout_icons:
         bsp: "\uebeb"
@@ -300,7 +300,7 @@ widgets:
         offset_left: 5
         show_layout_icons: true
       label_shadow:
-        enabled: true
+        enabled: false
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
