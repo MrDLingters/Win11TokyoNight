@@ -1,6 +1,6 @@
 # Windows 11 Tokyo Night Theme 
 ![Screenshot (75)](https://github.com/user-attachments/assets/cd3df315-ecce-447d-af31-084550eedcb3)
-![Screenshot (75)](https://github.com/user-attachments/assets/26724e3a-f5ab-4edc-8380-b8ce5004e66c)
+![Screenshot (77)](https://github.com/user-attachments/assets/7327aaed-3a87-4323-a61c-5484a27ae41d)
 ![Screenshot (76)](https://github.com/user-attachments/assets/a1a34dda-7d3b-46d8-bdaa-f67c36cf47a1)
 ![Screenshot (80)](https://github.com/user-attachments/assets/5c99dfde-6c5d-4490-ba36-d44f8b50bd19)
 ![Screenshot (83)](https://github.com/user-attachments/assets/dbc2eb2b-6731-42be-a5b8-90f3a82e61e8)
