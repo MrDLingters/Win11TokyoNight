@@ -108,7 +108,7 @@
 
 .komorebi-layout-menu {
     background-color: var(--base);
-    border: 1px solid var(--base);
+    border: 2px solid var(--text);
     border-radius: 6px;
 }
 .komorebi-layout-menu .menu-item {
