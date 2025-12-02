@@ -5,7 +5,6 @@
 ![Screenshot (80)](https://github.com/user-attachments/assets/5c99dfde-6c5d-4490-ba36-d44f8b50bd19)
 ![Screenshot (83)](https://github.com/user-attachments/assets/dbc2eb2b-6731-42be-a5b8-90f3a82e61e8)
 ![Screenshot (82)](https://github.com/user-attachments/assets/b6e6fea3-3de1-4514-97b1-ca9c0efad232)
-![Screenshot (83)](https://github.com/user-attachments/assets/8e307b3b-dce4-40e9-bec4-43c706f4028f)
 ![Screenshot (86)](https://github.com/user-attachments/assets/e966c310-542b-4689-9e0c-783528cf4725)
 ![Screenshot (87)](https://github.com/user-attachments/assets/a9417da7-7a01-4a04-9896-a400d995b39a)
 # Default Windows Taskbar
