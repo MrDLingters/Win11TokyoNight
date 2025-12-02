@@ -186,7 +186,21 @@
 .clock-widget .label {
     font-size: 14px;
     font-family: Bahnschrift;
+    color: var(--base);
+    font-weight: bold;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
+
+.clock-widget {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 0px solid var(--red);
+    border-radius: 6px;
+    background-color: var(--red);
+}
+
 /*CLOCK - CALENDAR WIDGET DROPDOWN*/
 .calendar {
     background-color: #1a1b26;
@@ -266,16 +280,26 @@
 }
 /*AUDIO WIDGET*/
 .volume-widget {
-    margin-left: 0;
-    padding: 0;
+    margin-left: 4;
+    border: 0px solid var(--text);
+    border-radius: 6px;
+    background-color: var(--text);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0;
 }
 .volume-widget .icon {
     padding: 0 6px;
-    color: #9aa5ce;
+    color: var(--base);
+    padding-left: 5px;
+    padding-top: 1;
 }
 .volume-widget .label {
     font-size: 14px;
     font-family: Bahnschrift;
+    color: var(--base);
+    padding-right: 5px;
+    padding-top: 2;
 }
 /*AUDIO DROPDOWN*/
 .audio-menu {
@@ -299,22 +323,35 @@
 
 /*MEDIA WIDGET*/
 .media-widget {
-	padding: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: var(--text);
+    border: 0px solid var(--text);
+    border-radius: 6px;
+    margin-right: 0;
 }
 .media-widget .label {
     font-family: Bahnschrift;
     font-size: 14px;
-    padding: 0 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 2px;
+    color: var(--base);
+    padding-right: 7px;
 }
 .media-widget .btn {
-    color: #9aa5ce;
+    color: var(--base);
+    padding-top: 2px;
 }
 .media-widget .icon{
-    padding: 0 6px;
+    padding-left: 5px;
 }
 /*WALLPAPERS WIDGET*/
 .wallpapers-widget {
     padding: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 0;
 }
 /*WALLPAPERS GALLERY*/
 .wallpapers-gallery-window {
@@ -334,6 +371,115 @@
     margin:0 8px 8px 8px;
     width: 600px;
 }
+
+/*MEDIA POPUP*/
+.media-menu {
+  min-width: 416px;
+  max-width: 416px;
+  background-color: var(--base);
+  border-radius: 6px;
+  border: 2px solid var(--text);
+}
+.media-menu .thumbnail {
+  border: 4px solid var(--text);
+  border-radius: 6px;
+}
+.media-menu .title,
+.media-menu .artist,
+.media-menu .source {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial;
+  color: var(--text);
+  margin-left: 10px;
+}
+.media-menu .artist {
+  font-size: 13px;
+  color: var(--subtext1);
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.media-menu .source {
+  font-size: 14px;
+  color: var(--base);
+  font-weight: bold;
+  font-family: Arial;
+  border-radius: 6px;
+  background-color: var(--text);
+  padding: 2px 6px;
+}
+.media-menu .source.firefox {
+  background-color: #ff583b;
+  color: #e5e7eb;
+}
+.media-menu .source.spotify {
+  background-color: #199143;
+  color: #e5e7eb;
+}
+.media-menu .source.edge {
+  background-color: #0078d4;
+  color: #e5e7eb;
+}
+.media-menu .source.windows-media {
+  background-color: #0078d4;
+  color: #e5e7eb;
+}
+.media-menu .btn {
+  font-family: "Segoe Fluent Icons";
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  color: var(--text);
+}
+.media-menu .btn.prev {
+  margin-left: 10px;
+  color: var(--text);
+}
+.media-menu .btn:hover {
+  color: var(--icon);
+  background-color: transparent;
+}
+.media-menu .btn.play {
+  background-color: var(--base);
+  font-size: 20px;
+}
+.media-menu .btn.disabled:hover,
+.media-menu .btn.disabled {
+  color: var(--text);
+  background-color: rgba(0, 0, 0, 0);
+}
+.media-menu .playback-time {
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: bold;
+  color: var(--text);
+  margin-top: 12px;
+  min-width: 100px;
+}
+.media-menu .progress-slider {
+  height: 10px;
+  border-radius: 3px;
+  color: var(--text);
+}
+.media-menu .progress-slider::groove {
+  background: var(--subtext0);
+  height: 4px;
+  border-radius: 3px;
+}
+.media-menu .progress-slider::groove:hover {
+  background: var(--subtext0);
+  height: 6px;
+  border-radius: 3px;
+}
+.media-menu .progress-slider::sub-page {
+  background: var(--text);
+  border-radius: 6px;
+  height: 4px;
+}
+
 .wallpapers-gallery-buttons:hover {
     background-color:#343B58;
 }
@@ -350,6 +496,9 @@
 /*POWER WIDGET*/
 .power-menu-widget {
     padding-left: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-right: 8px;
 }
 .power-menu-widget .label {
 	color: var(--red);
@@ -399,6 +548,13 @@
 .cava-widget {
     padding: 0;
     margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 0px solid var(--icon);
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--icon);
 }
 /*GITHUB WIDGET*/
 .github-widget {
@@ -475,14 +631,19 @@
 .systray {
   padding: 0;
   margin: 0;
-  border: none;
-  background-color: var(--base);
-  padding-bottom: 1px;
+  border: 0px solid var(--base);
+  padding-bottom: 0px;
   padding-right: 5px;
   padding-left: 5px;
+  border-radius: 6px;
+  padding-bottom: 0px;
 }
 .systray .button {
   background: transparent;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  
 }
 .systray .unpinned-visibility-btn {
   border-radius: 6px;
@@ -492,29 +653,40 @@
   font-size: 16px;
 }
 
+.systray .label {
+    background-color: #3fb950;
+}
+
 .taskbar-widget {
-    margin-left: 0px;
+    padding-left: -2;
 }
 
 .taskbar-widget .app-container {
+    border: 0px solid var(--text);
     margin: 4px 2px;
     border-radius: 6px;
     padding: 0 4px;
     padding-bottom: 0px;
+    background-color: var(--green);
 }
 .taskbar-widget .app-container.foreground {
     background-color: var(--icon);
+    border: 0px solid var(--text);
+    border-radius: 6px;
 }
 .taskbar-widget .app-container.flashing {
     background-color: rgba(255, 106, 106, 0.63);
 }
 .taskbar-widget .app-container.running {
-    background-color: var(--subtext1);
+    background-color: var(--text);
+    border: 0px solid var(--base);
+    border-radius: 6px;
 }
 .taskbar-widget .app-container:hover {
     background-color: var(--red)
 }
 .taskbar-widget .app-container .app-title {
+    padding-top: 0;
     padding-left: 4px;
     color: var(--base);
 }
