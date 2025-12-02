@@ -1,4 +1,4 @@
-# Windows 11 Tokyo Night Theme
+# Windows 11 Tokyo Night Theme (With Windows taskbar)
 
 ![Screenshot (45)](https://github.com/user-attachments/assets/2c02d895-5f7e-4932-b132-148d07c99297)
 ![Screenshot (44)](https://github.com/user-attachments/assets/9ee96df2-0338-4e50-94f3-aa9c11bee2d2)
