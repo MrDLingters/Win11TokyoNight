@@ -152,7 +152,7 @@ widgets:
           offset_left: 0
           thumbnail_size: 100
           thumbnail_corner_radius: 6
-          max_title_size: 65
+          max_title_size: 60
           max_artist_size: 50
           show_source: true
         media_menu_icons:
