@@ -3,13 +3,13 @@
   "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
     "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
-  "transparency": false,
-  "transparency_alpha": 254,
+  "transparency": true,
+  "transparency_alpha": 252,
   "default_workspace_padding": 8,
   "default_container_padding": 6,
   "border": true,
   "border_width": 4,
-  "border_offset": -1,
+  "border_offset": 0,
   "mouse_follows_focus": false,
   "animation": {
     "enabled": true,
@@ -35,7 +35,7 @@
         },
         {
           "name": "II",
-          "layout": "VerticalStack"
+          "layout": "Grid"
         },
         {
           "name": "III",
@@ -52,7 +52,7 @@
         },
         {
           "name": "2",
-          "layout": "VerticalStack"
+          "layout": "Grid"
         },
         {
           "name": "3",
@@ -86,6 +86,11 @@
 {
 "kind": "Exe",
 "id": "PotPlayerMini64.exe",
+"matching_strategy": "Equals",
+},
+{
+"kind": "Exe",
+"id": "Files.exe",
 "matching_strategy": "Equals",
 }
 ]
