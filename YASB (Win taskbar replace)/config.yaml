@@ -1,713 +1,370 @@
-/*VARIABLES AND SOME DEFAULT SETTINGS*/
-:root {
-    --rosewater: #cfc9c2;
-    --flamingo: #e0af68;
-    --pink: #cfc9c2;
-    --mauve: #cfc9c2;
-    --red: #f7768e;
-    --maroon: #f7768e;
-    --peach: #e0af68;
-    --peachedit: #cfc9c2;
-    --peachedit2: #e0af68;
-    --yellow: #e0af68;
-    --green: #9ece6a;
-    --teal: #73daca;
-    --sky: #7dcfff;
-    --sapphire: #7aa2f7;
-    --blue: #7aa2f7;
-    --lavender: #c0caf5;
-    --text: #9aa5ce;
-    --subtext1: #565f89;
-    --subtext0: #343B58;
-    --overlay2: #9399b2;
-    --overlay1: #7f849c;
-    --overlay0: #6c7086;
-    --surface2: #24283b;
-    --surface1: #1a1b26;
-    --surface1: #1a1b26;
-    --base: #1a1b26;
-    --winbutton: #9aa5ce;
-    --icon: #e0af68;
-    --basetransparent: rgba(30, 30, 46, 0.6);
-    --mantle: rgba(24, 24, 37, 1);
-    --crust: rgba(17, 17, 27, 1);
-}
-*{
-    font-size: 12px;
-    color: var(--text);
-    font-weight: 600;
-    font-family: "JetBrainsMono NFP";
-    margin: 0;
-    padding: 0;
-}
-/*GENERAL CONFIGRATIONS*/
-.yasb-bar {
-	padding: 0;
-	margin: 0;
-    background-color: var(--base);
-}
-.widget {
-    padding: 0 4px;
-    margin: 0 4px;
-    border-radius: 12px;
-    border: 1px solid rgba(128, 128, 128, 0);
-}
-.widget .icon {
-    font-size: 18px;
-}
-.widget .label {
-    color: var(--text);
-}
-/*WIDGET*/
-.home-widget {
-    padding-bottom: 1px;
-}
-/*HOME WIDGET DROPDOWN*/
-.home-menu {
-    background-color: var(--mantle);
-    padding: 0;
-    margin-left: 0px;
-}
-.home-menu .menu-item {
-    padding: 6px 48px 7px 16px;
-    font-size: 12px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-}
-.home-menu .menu-item:hover {
-    background-color:rgba(128, 130, 158, 0.15);
-    color: #fff;
-}
-.home-menu .separator {
-    max-height: 1px;
-    background-color:rgba(128, 130, 158, 0.3);
-}
-/*KOMOREBI WORKSPACES WIDGET*/
-.komorebi-workspaces {
-    margin-left: 8px;
-    margin-right: -4px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-}
-.komorebi-active-layout .label {
-	margin: 0 5px;
-    padding-bottom: 0px;
-    font-size: 13px;
-    color: var(--base);
-}
-
-.komorebi-active-layout {
-    background-color: var(--icon);
-    border: 0px solid var(--icon);
-    margin-bottom: 5px;
-    margin-top: 5px;
-    margin-right: 0px;
-    border-radius: 6px;
-}
-
-.komorebi-layout-menu {
-    background-color: var(--base);
-    border: 0px solid var(--text);
-    border-radius: 6px;
-}
-.komorebi-layout-menu .menu-item {
-    padding: 8px 10px;
-    font-size: 15px;
-    color: var(--text); 
-    font-weight: 600;
-}
-.komorebi-layout-menu .menu-item-icon {
-    color: var(--text);
-    font-size: 15px;
-}
-.komorebi-layout-menu .menu-item-text {
-    font-family: 'Segoe UI';
-    padding-left:0px;
-    font-size: 12px;
-} 
-.komorebi-layout-menu .menu-item:hover {
-    background-color:rgba(128, 130, 158, 0.15);
-    color: #fff;
-} 
-.komorebi-layout-menu .separator {
-    max-height: 1px;
-    background-color: rgba(255, 255, 255, 0.15);
-}
-.komorebi-workspaces .offline-status {
-    color: #24283b;
-    font-size: 12px;
-    padding: 0 4px;
-    font-weight: 600;
-}
-.komorebi-workspaces .ws-btn {
-    border: none;
-    background-color: var(--overlay2);
-    margin: 0px 4px;
-    padding: 0;
-    color: rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    height: 10px;
-    width: 10px;
-}
-.komorebi-workspaces .ws-btn.populated {
-    background-color: var(--sky);
-}
-.komorebi-workspaces .ws-btn.active {
-    color: rgba(149, 177, 255, 0);
-    background-color: #e0af68;
-    width: 36px;
-    height: 10px;
-    border-radius: 4px;
-}
-/*WEATHER WIDGET*/
-.weather-widget {
-    padding: 0;
-    padding-left: -5
-}
-.weather-widget .icon {
-    color: var(--yellow);
-    padding: 6px;
-}
-.weather-widget .label {
-    font-size: 14px;
-    font-family: Bahnschrift;
-}
-/*ACTIVE WINDOW WIDGET*/
-.active-window-widget .label {
-    font-size: 14px;
-    font-family: Bahnschrift;
-}
-.active-window-widget .icon {
-    padding-right: 6px;
-    border: none;
-}
-/*CLOCK - CALENDAR WIDGET*/
-.clock-widget .label {
-    font-size: 14px;
-    font-family: Bahnschrift;
-    color: var(--base);
-    font-weight: bold;
-    padding-top: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-}
-
-.clock-widget {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border: 0px solid var(--red);
-    border-radius: 6px;
-    background-color: var(--red);
-}
-
-/*CLOCK - CALENDAR WIDGET DROPDOWN*/
-.calendar {
-    background-color: var(--base);
-    padding-right: 8px;
-    border: 1px solid var(--base);
-    border-radius: 6px;
-}
-.calendar .calendar-table,
-.calendar .calendar-table::item {
-    background-color: #1a1b26;
-    color: #9aa5ce;
-    font-family: 'Segoe UI';
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;  
-}
-.calendar .calendar-table::item:selected {
-    color: #9aa5ce;
-}
-.calendar .day-label {
-    margin-top: 20px;
-}
-.calendar .day-label,
-.calendar .month-label,
-.calendar .date-label {
-    font-family: 'Segoe UI';
-    font-size: 16px;
-    color: #9aa5ce;
-    font-weight: 700;
-    min-width: 180px;
-    max-width: 180px;
-}
-.calendar .month-label {
-    font-weight: normal;
-}
-.calendar .date-label {
-    font-size: 88px;
-    font-weight: 900;
-    color: #9aa5ce;
-    margin-top: -20px;
-}
-/*DISK WIDGET*/
-.disk-widget {
-    padding: 0;
-}
-/*DISK DROPDOWN*/
-.disk-group {
-    background-color: var(--mantle);    
-}
-.disk-group-row {
-    min-width: 220px;
-    max-width: 220px;
-    max-height: 40px;
-    margin: 0;
-    padding: 0;
-    border-radius: 6px;
-    border: 1px solid rgba(128, 128, 128, 0);
-}
-.disk-group-row:hover {
-    background-color:rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.disk-group-label-bar{
-    max-height: 8px;
-    border:0px solid rgba(128, 128, 128, 0);
-    background-color: rgba(148, 226, 213, 0.3);
-    border-radius: 4px;
-}
-.disk-group-label-bar::chunk{
-    background-color: rgba(148, 226, 213, 1);
-    border-radius: 4px;
-}
-.disk-group-label {
-    font-size: 13px;
-}
-.disk-group-label-size {
-    font-size: 12px;
-    color: rgba(205, 214, 244, 0.5);
-}
-/*AUDIO WIDGET*/
-.volume-widget {
-    margin-left: 4;
-    border: 0px solid var(--text);
-    border-radius: 6px;
-    background-color: var(--text);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 0;
-}
-.volume-widget .icon {
-    padding: 0 6px;
-    color: var(--base);
-    padding-left: 5px;
-    padding-top: 1;
-}
-.volume-widget .label {
-    font-size: 14px;
-    font-family: Bahnschrift;
-    color: var(--base);
-    padding-right: 5px;
-    padding-top: 2;
-}
-/*AUDIO DROPDOWN*/
-.audio-menu {
-    background-color: var(--mantle);
-}
-.audio-container .device {
-    font-family: Bahnschrift;
-    background-color: transparent;
-    border: none;
-    padding:6px 8px 6px 4px;
-    margin: 2px 0;
-    font-size: 14px;
-    border-radius: 4px;
-}
-.audio-container .device.selected {
-    background-color: rgba(255, 255, 255, 0.085);
-}
-.audio-container .device:hover {
-    background-color: rgba(255, 255, 255, 0.06);
-}
-
-/*MEDIA WIDGET*/
-.media-widget {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    background-color: var(--text);
-    border: 0px solid var(--text);
-    border-radius: 6px;
-    margin-right: 0;
-}
-.media-widget .label {
-    font-family: Bahnschrift;
-    font-size: 14px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    padding-top: 2px;
-    color: var(--base);
-    padding-right: 7px;
-}
-.media-widget .btn {
-    color: var(--base);
-    padding-top: 2px;
-}
-.media-widget .icon{
-    padding-left: 5px;
-}
-/*WALLPAPERS WIDGET*/
-.wallpapers-widget {
-    padding: 0;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    padding-top: 0;
-}
-/*WALLPAPERS GALLERY*/
-.wallpapers-gallery-window {
-    background-color: #1a1b26;
-    border: 0;
-    margin: 0;
-}
-.wallpapers-gallery-buttons {
-    font-size: 12px;
-    font-family: 'Bahnschrift';
-    background-color:#24283b;
-    color: white;
-    border: none;
-    font-size: 14px;
-    padding: 8px 0;
-    border-radius: 8px;
-    margin:0 8px 8px 8px;
-    width: 600px;
-}
-
-/*MEDIA POPUP*/
-.media-menu {
-  min-width: 416px;
-  max-width: 416px;
-  background-color: var(--base);
-  border-radius: 6px;
-  border: 2px solid var(--base);
-}
-.media-menu .thumbnail {
-  border: 4px solid var(--text);
-  border-radius: 6px;
-}
-.media-menu .title,
-.media-menu .artist,
-.media-menu .source {
-  font-size: 16px;
-  font-weight: bold;
-  font-family: Arial;
-  color: var(--text);
-  margin-left: 10px;
-}
-.media-menu .artist {
-  font-size: 13px;
-  color: var(--subtext1);
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-.media-menu .source {
-  font-size: 14px;
-  color: var(--base);
-  font-weight: bold;
-  font-family: Arial;
-  border-radius: 6px;
-  background-color: var(--text);
-  padding: 2px 6px;
-}
-.media-menu .source.firefox {
-  background-color: #ff583b;
-  color: #e5e7eb;
-}
-.media-menu .source.spotify {
-  background-color: #199143;
-  color: #e5e7eb;
-}
-.media-menu .source.edge {
-  background-color: #0078d4;
-  color: #e5e7eb;
-}
-.media-menu .source.windows-media {
-  background-color: #0078d4;
-  color: #e5e7eb;
-}
-.media-menu .btn {
-  font-family: "Segoe Fluent Icons";
-  font-size: 14px;
-  font-weight: bold;
-  min-width: 40px;
-  max-width: 40px;
-  min-height: 40px;
-  max-height: 40px;
-  color: var(--text);
-}
-.media-menu .btn.prev {
-  margin-left: 10px;
-  color: var(--text);
-}
-.media-menu .btn:hover {
-  color: var(--icon);
-  background-color: transparent;
-}
-.media-menu .btn.play {
-  background-color: var(--base);
-  font-size: 20px;
-}
-.media-menu .btn.disabled:hover,
-.media-menu .btn.disabled {
-  color: var(--text);
-  background-color: rgba(0, 0, 0, 0);
-}
-.media-menu .playback-time {
-  font-size: 14px;
-  font-family: Arial;
-  font-weight: bold;
-  color: var(--text);
-  margin-top: 12px;
-  min-width: 100px;
-}
-.media-menu .progress-slider {
-  height: 10px;
-  border-radius: 3px;
-  color: var(--text);
-}
-.media-menu .progress-slider::groove {
-  background: var(--subtext0);
-  height: 4px;
-  border-radius: 3px;
-}
-.media-menu .progress-slider::groove:hover {
-  background: var(--subtext0);
-  height: 6px;
-  border-radius: 3px;
-}
-.media-menu .progress-slider::sub-page {
-  background: var(--text);
-  border-radius: 6px;
-  height: 4px;
-}
-
-.wallpapers-gallery-buttons:hover {
-    background-color:#343B58;
-}
-.wallpapers-gallery-image {
-    border: 4px solid transparent;
-    border-radius: 10px;
-}
-.wallpapers-gallery-image:hover {
-    border: 4px solid rgb(66, 68, 83);
-}
-.wallpapers-gallery-image.focused {
-    border: 4px solid #89b4fa;
-}
-/*POWER WIDGET*/
-.power-menu-widget {
-    padding-left: 0;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    padding-right: 8px;
-}
-.power-menu-widget .label {
-	color: var(--red);
-    font-size: 16px;
-}
-/*POWER MENU POPUP*/
-.uptime {
-	font-size: 14px;
-	margin-bottom: 10px;
-	color: rgba(191, 202, 219, 0.726);
-	font-weight: 600;
-	font-family: "Bahnschrift";
-}
-.power-menu-popup .button {
-	padding: 0;
-	width: 160px;
-	height: 240px;
-	border-radius: 4px;
-	background-color: rgba(41, 42, 58, 0.75);
-	font-family: "Bahnscrift";
-	color: white;
-	border: 4px solid rgba(255, 255, 255, 0);
- 
-}
-.power-menu-popup .button.hover {
-	background-color: rgb(55, 56, 75);
-	border: 4px solid rgb(55, 56, 75);
-}
-.power-menu-popup .button .label {
-	margin-bottom: 8px;
-	font-size: 16px;
-	font-weight: 600;
-	color: rgba(255, 255, 255, 0.6);
-	font-family: "Bahnschrift";
-}
-.power-menu-popup .button .icon {
-	font-size: 64px;
-	padding-top: 54px;
-	color: rgba(255, 255, 255, 0.25);
-}
-.power-menu-popup .button.cancel .icon {
-	color: rgba(243, 139, 168, 0.55);
-}
-.power-menu-popup .button.cancel .label {
-	color: rgba(243, 139, 168, 0.95);
-}
-.cava-widget {
-    padding: 0;
-    margin-right: 0;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border: 0px solid var(--icon);
-    border-radius: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: var(--icon);
-}
-/*GITHUB WIDGET*/
-.github-widget {
-    padding: 0;
-}
-.github-widget .icon {
-    font-size: 16px;
-}
-/*GITHUB DROPDOWN*/
-.github-menu    {
-    background-color:  rgba(17, 17, 27, 0.2);
-    max-height: 500px;
-    min-height: 500px;
-    min-width: 420px;
-}
-.github-menu .header {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 15px;
-    font-weight: 400;
-    font-family: 'Segoe UI';
-    padding: 8px;
-    color: white;
-    background-color: rgba(17, 17, 27, 0.75);
-}
-.github-menu .footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 12px;
-    padding: 4px 8px 6px 8px;
-    font-family: 'Segoe UI';
-    color: #9399b2;
-    background-color: rgba(17, 17, 27, 0.75);
-}
-.github-menu .contents {
-    background-color:  rgba(17, 17, 27, 0.2);
-}
-.github-menu .contents .item {
-    min-height: 40px;
-    padding: 6px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.075);
-}
-.github-menu .contents .item:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-}
-.github-menu .contents .item .title,
-.github-menu .contents .item .description {
-    color: #9399b2;
-    font-family: Segoe UI;
-}
-.github-menu .contents .item .title {
-    font-size: 14px;
-    font-weight: 600; 
-}
-.github-menu .contents .item .description {
-    font-size: 12px;
-    font-weight: 500
-}
-.github-menu .contents .item.new .title,
-.github-menu .contents .item.new .description {
-    color: #ffffff
-}
-.github-menu .contents .item .icon {
-    font-size: 16px;
-    padding-right: 0;
-    padding-left: 8px;
-    padding-right: 4px;
-    color: #9399b2;
-}
-.github-menu .contents .item.new .icon {
-    color: #3fb950;
-}
-
-/*SYSTEM TRAY*/
-.systray {
-  padding: 0;
-  margin: 0;
-  border: 0px solid var(--base);
-  padding-bottom: 0px;
-  padding-right: 5px;
-  padding-left: 5px;
-  border-radius: 6px;
-  padding-bottom: 0px;
-}
-.systray .button {
-  background: transparent;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  padding-bottom: 0px;
-  
-}
-.systray .unpinned-visibility-btn {
-  border-radius: 6px;
-  color: var(--text);
-  font-family: "Segoe Fluent Icons";
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.systray .label {
-    background-color: #3fb950;
-}
-
-.taskbar-widget {
-    padding-left: -2;
-}
-
-.taskbar-widget .app-container {
-    border: 0px solid var(--text);
-    margin: 4px 2px;
-    border-radius: 6px;
-    padding: 0 4px;
-    padding-bottom: 0px;
-    background-color: var(--green);
-}
-.taskbar-widget .app-container.foreground {
-    background-color: var(--icon);
-    border: 0px solid var(--text);
-    border-radius: 6px;
-}
-.taskbar-widget .app-container.flashing {
-    background-color: rgba(255, 106, 106, 0.63);
-}
-.taskbar-widget .app-container.running {
-    background-color: var(--text);
-    border: 0px solid var(--base);
-    border-radius: 6px;
-}
-.taskbar-widget .app-container:hover {
-    background-color: var(--red)
-}
-.taskbar-widget .app-container .app-title {
-    padding-top: 0;
-    padding-left: 4px;
-    color: var(--base);
-}
-/* Taskbar preview popup is very limited in styling options, do not use margins/paddings here */
-.taskbar-preview {
-    border-radius: 8px; 
-    background-color: var(--base); 
-}
-.taskbar-preview.flashing { 
-    background-color: #7f434a;
-}
-.taskbar-preview .header {
-    padding-bottom: 12px;
-    padding-top: 4px;
-}
-.taskbar-preview .header .title {
-    color: var(--text);
-    font-family: "Segoe UI";
-    font-weight: 600;
-    font-size: 13px;
-}
+watch_stylesheet: true
+watch_config: true
+debug: false
+komorebi:
+  start_command: "komorebic start --whkd"
+  stop_command: "komorebic stop --whkd"
+  reload_command: "komorebic stop --whkd && komorebic start --whkd"
+bars:
+  primary-bar:
+    enabled: true
+    screens: ['*'] 
+    class_name: "yasb-bar"
+    alignment:
+      position: "top"
+      center: false
+    blur_effect:
+      enabled: false
+      acrylic: false
+      dark_mode: true
+      round_corners: true
+      border_color: transparent
+    window_flags:
+      always_on_top: true
+      windows_app_bar: true
+      hide_on_fullscreen: true
+    dimensions:
+      width: "100%"
+      height: 36
+    padding:
+      top: 0 # 4 4 2 4
+      left: 0
+      bottom: 0
+      right: 0
+    widgets:
+      left:
+        [
+          "komorebi_workspaces",
+          "komorebi_active_layout",
+          "taskbar",
+        ]
+      center:
+        []
+      right:
+        [
+          "cava",
+          "media",
+          "volume",
+          "clock",
+          "systray",
+          "wallpapers",
+          "power_menu"
+        ]
+widgets:
+  home:
+    type: "yasb.home.HomeWidget"
+    options:
+      label: "<span>\udb80\udf5c</span>"
+      menu_list:
+      - { title: "Home", path: "~" }
+      - { title: "Downloads", path: "C:\\Users\\elrond\\Downloads"}
+      - { title: "Documents", path: "C:\\Users\\elrond\\Documents"}
+      - { title: "Pictures", path: "C:\\Users\\elrond\\Pictures"}
+      - { title: "Videos", path: "C:\\Users\\elrond\\Videos"}
+      system_menu: true
+      power_menu: false
+      blur: true
+      round_corners: true
+      round_corners_type: "normal"
+      border_color: ""
+      distance: 5
+      container_padding: 
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+      alignment: "left"
+      direction: "down"
+      menu_labels:
+        shutdown: "Shutdown"
+        restart: "Restart"
+        logout: "Logout"
+        lock: "Lock"
+        sleep: "Sleep"
+        system: "System Settings"
+        about: "About This PC"
+        task_manager: "Task Manager"
+  komorebi_workspaces:
+    type: "komorebi.workspaces.WorkspaceWidget"
+    options:
+        label_offline: "\u26a1 Offline"
+        label_workspace_btn: ""
+        label_workspace_active_btn: ""
+        label_workspace_populated_btn: ""
+        label_default_name: "{index}"
+        label_zero_index: false
+        hide_empty_workspaces: false
+        hide_if_offline: true
+        animation: true
+  weather:
+    type: "yasb.weather.WeatherWidget"
+    options:
+      label: "<span>{icon}</span> {temp}"
+      label_alt: "<span>{icon}</span> {location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
+      api_key: 'EnterAPIKeyHere'
+      update_interval: 600 #Update interval in seconds, Min 600
+      hide_decimal: true
+      location: 'Irkutsk'
+      callbacks:
+        on_left: "toggle_label"
+      icons:
+        sunnyDay: "\udb81\udd99"
+        clearNight: "\udb81\udd99"
+        cloudyDay: "\udb81\udd99"
+        cloudyNight: "\udb81\udd99"
+        rainyDay: "\udb81\udd99"
+        rainyNight: "\udb81\udd99"
+        snowyIcyDay: "\udb81\udd99"
+        snowyIcyNight: "\udb81\udd99"
+        blizzardDay: "\udb81\udd99"
+        default: "\udb81\udd99" 
+  media:
+      type: "yasb.media.MediaWidget"
+      options:
+        label: "{artist} - {title}"
+        label_alt: "{artist}"
+        callbacks:
+          on_left: "toggle_media_menu"
+          on_middle: "do_nothing"
+          on_right: "toggle_label"
+        max_field_size:
+          label: 45
+          label_alt: 45
+        show_thumbnail: false
+        controls_only: false
+        controls_left: true
+        hide_empty: true
+        thumbnail_alpha: 250
+        thumbnail_padding: 8
+        thumbnail_corner_radius: 6
+        icons:
+          prev_track: ""
+          next_track: ""
+          play: "<span>\uf001</span>"
+          pause: "<span>\uf001</span>"
+        media_menu:
+          blur: false
+          round_corners: true
+          round_corners_type: "normal"
+          alignment: "right"
+          direction: "down"
+          offset_top: 5
+          offset_left: 0
+          thumbnail_size: 100
+          thumbnail_corner_radius: 6
+          max_title_size: 65
+          max_artist_size: 50
+          show_source: true
+        media_menu_icons:
+          play: "\ue768"
+          pause: "\ue769"
+          prev_track: "\ue892"
+          next_track: "\ue893"
+  active_window:
+    type: "yasb.active_window.ActiveWindowWidget"
+    options:
+      label: "{win[title]}"
+      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
+      label_no_window: ""
+      label_icon: true
+      label_icon_size: 14
+      max_length: 36
+      max_length_ellipsis: "..."
+      monitor_exclusive: true
+  volume:
+    type: "yasb.volume.VolumeWidget"
+    options:
+      label: "<span>{icon}</span> {level}"
+      label_alt: "{volume}"
+      volume_icons:
+        - "\ueee8"  # Icon for muted
+        - "\uf026"  # Icon for 0-10% volume
+        - "\uf027"  # Icon for 11-30% volume
+        - "\uf027"  # Icon for 31-60% volume
+        - "\uf028"  # Icon for 61-100% volume
+      callbacks:
+        on_right: "exec cmd.exe /c start ms-settings:sound"
+  clock:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "{%a %b %d %H:%M}"
+      label_alt: "{%A, %d %B %Y %H:%M}"
+      timezones: []
+      calendar:
+        alignment: "center"
+  disk:
+    type: "yasb.disk.DiskWidget"
+    options:
+        label: "<span>\uf473</span>"
+        label_alt: "<span>\uf473</span>"
+        update_interval: 60
+        group_label:
+          volume_labels: ["C", "D", "E", "F"]
+          show_label_name: false
+          blur: True
+          round_corners: True
+          round_corners_type: "small"
+          border_color: "System"
+          alignment: "right"
+          direction: "down"
+          distance: 6
+        callbacks:
+          on_left: "toggle_group"
+          on_middle: "toggle_label"
+          on_right: "exec explorer C:\\" # Open disk C in file explorer
+  wallpapers:
+    type: "yasb.wallpapers.WallpapersWidget"
+    options:
+      label: "<span>\udb83\ude09</span>"
+      image_path: "C:\\Users\\MrDLi\\OneDrive\\Pictures\\Wallpapers\\Themes\\TokyoNight"
+      change_automatically: false
+      update_interval: 60
+      gallery:
+        enabled: true
+        blur: true
+        image_width: 296
+        image_per_page: 6
+        show_buttons: true
+        orientation: "portrait"
+        image_spacing: 10
+        lazy_load: true
+        lazy_load_delay: 10
+        lazy_load_fadein: 200
+        image_corner_radius: 20
+        enable_cache: true
+  power_menu:
+      type: "yasb.power_menu.PowerMenuWidget"
+      options:
+        label: "\uf011"
+        uptime: True
+        blur: False
+        blur_background: True
+        animation_duration: 250 # Milisecond 
+        button_row: 5 # Number of buttons in row, min 1 max 5
+        buttons:
+          signout: ["\udb80\udf43","Sign out"]
+          shutdown: ["\uf011","Shut Down"]
+          restart: ["\uead2","Restart"]
+          hibernate: ["\uf28e","Hibernate"]
+          cancel: ["\udb81\udf3a","Cancel"]
+  cava:
+    type: "yasb.cava.CavaWidget"
+    options:
+      bar_height: 12
+      gradient: 0
+      reverse: 0
+      sensitivity: 100
+      foreground: "#1a1b26"
+      gradient_color_1: '#74c7ec'
+      gradient_color_2: '#89b4fa'
+      gradient_color_3: '#cba6f7'
+      bars_number: 12
+      bar_spacing: 2
+      bar_width: 4
+      sleep_timer: 0
+      hide_empty: true
+      container_padding:
+        top: 0
+        left: 2
+        bottom: 0
+        right: 0
+  github:
+    type: "yasb.github.GithubWidget"
+    options:
+      label: "<span>\ueba1</span>"
+      label_alt: "Notifications {data}" # {data} return number of unread notification
+      token: env # GitHub Personal access tokens (classic) https://github.com/settings/tokens
+      max_notification: 20 # Max number of notification displaying in menu max: 50
+      only_unread: false # Show only unread or all notifications; 
+      max_field_size: 54 # Max characters in title before truncation.
+      update_interval: 300 # Check for new notification in seconds
+      menu:
+        blur: True # Enable blur effect for the menu
+        round_corners: True # Enable round corners for the menu (this option is not supported on Windows 10)
+        round_corners_type: "normal" # Set the type of round corners for the menu (normal, small) (this option is not supported on Windows 10)
+        border_color: "System" # Set the border color for the menu (this option is not supported on Windows 10)
+        alignment: "right"
+        direction: "down"
+        distance: 6
+  komorebi_active_layout:
+    type: "komorebi.active_layout.ActiveLayoutWidget"
+    options:
+      hide_if_offline: true
+      label: "{layout_name}"
+      layouts: ['bsp', 'columns', 'rows', 'grid', 'vertical_stack', 'horizontal_stack', 'ultrawide_vertical_stack','right_main_vertical_stack']
+      layout_icons:
+        bsp: "\uebeb"
+        columns: "\uebf7"
+        rows: "\uec01"
+        grid: "\udb81\udf58"
+        scrolling: "\uebf7"
+        vertical_stack: "\uebee"
+        horizontal_stack: "\uebf0"
+        ultrawide_vertical_stack: "\uebee"
+        right_main_vertical_stack: "\uebf1"
+        monocle: "\uf06f"
+        maximized: "\uf06f"
+        floating: "\uf2d2"
+        paused: "\udb83\udf89"
+        tiling: "\udb81\ude40"
+      callbacks:
+        on_left: 'toggle_layout_menu'
+        on_middle: 'next_layout'
+        on_right: 'prev_layout'
+      layout_menu:
+        blur: false
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "System"
+        alignment: "left"
+        direction: "down"
+        offset_top: 5
+        offset_left: 5
+        show_layout_icons: true
+      label_shadow:
+        enabled: false
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
+  systray:
+    type: "yasb.systray.SystrayWidget"
+    options:
+      class_name: "systray"
+      label_collapsed: "\ue8a9"
+      label_expanded: "\ue76c"
+      icon_size: 16
+      show_unpinned: false
+      show_unpinned_button: true
+      show_battery: false
+      show_volume: false
+      show_network: false
+      btn_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
+  taskbar:
+    type: "yasb.taskbar.TaskbarWidget"
+    options:
+      icon_size: 16
+      tooltip: true
+      show_only_visible: false
+      strict_filtering: true
+      monitor_exclusive: false
+      animation:
+        enabled: true
+      preview:
+        enabled: true
+        width: 240
+        delay: 400
+        padding: 8
+        margin: 8
+      title_label:
+        enabled: true
+        show: "always"
+        min_length: 10
+        max_length: 30
+      ignore_apps:
+        processes: []
+        titles: []
+        classes: []
