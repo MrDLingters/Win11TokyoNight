@@ -13,10 +13,10 @@
   "mouse_follows_focus": false,
   "animation": {
     "enabled": true,
-    "duration": 150,
-    "fps": 160,
+    "duration": 170,
+    "fps": 300,
     "style": {
-        "movement":"EaseInOutQuad",
+        "movement":"EaseInOutSine",
         "transparency": "Linear"
       }
 },
@@ -95,3 +95,4 @@
 }
 ]
 }
+
